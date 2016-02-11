@@ -7,9 +7,12 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "WeatherService.h"
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <WeatherServiceProtocol>
 
+@property (strong, nonatomic)  id<WeatherServiceProtocol>service;
+@property (strong, nonatomic) NSString *countryName;
 
 @end
 

@@ -16,6 +16,11 @@
 		1790BFBA1C3FCE5900BE1424 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1790BFB81C3FCE5900BE1424 /* LaunchScreen.storyboard */; };
 		1790BFC51C3FCE5A00BE1424 /* WeatherTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790BFC41C3FCE5A00BE1424 /* WeatherTests.m */; };
 		1790BFD01C3FCE5A00BE1424 /* WeatherUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1790BFCF1C3FCE5A00BE1424 /* WeatherUITests.m */; };
+		80B360741C6B47F200921261 /* WeatherWebService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B360731C6B47F200921261 /* WeatherWebService.m */; };
+		80B360791C6B4ECC00921261 /* WeatherMockService.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B360781C6B4ECC00921261 /* WeatherMockService.m */; };
+		80B3607C1C6B63F200921261 /* IntroViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 80B3607B1C6B63F200921261 /* IntroViewController.m */; };
+		80B3607E1C6B84C300921261 /* WeatherWeek.json in Resources */ = {isa = PBXBuildFile; fileRef = 80B3607D1C6B84C300921261 /* WeatherWeek.json */; };
+		80B360821C6CB2AF00921261 /* WeatherCurrent.json in Resources */ = {isa = PBXBuildFile; fileRef = 80B360811C6CB2AF00921261 /* WeatherCurrent.json */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,15 @@
 		1790BFCB1C3FCE5A00BE1424 /* WeatherUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = WeatherUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1790BFCF1C3FCE5A00BE1424 /* WeatherUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = WeatherUITests.m; sourceTree = "<group>"; };
 		1790BFD11C3FCE5A00BE1424 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		80B360721C6B47F200921261 /* WeatherWebService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherWebService.h; sourceTree = "<group>"; };
+		80B360731C6B47F200921261 /* WeatherWebService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherWebService.m; sourceTree = "<group>"; };
+		80B360771C6B4ECC00921261 /* WeatherMockService.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = WeatherMockService.h; sourceTree = "<group>"; };
+		80B360781C6B4ECC00921261 /* WeatherMockService.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = WeatherMockService.m; sourceTree = "<group>"; };
+		80B3607A1C6B63F200921261 /* IntroViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = IntroViewController.h; sourceTree = "<group>"; };
+		80B3607B1C6B63F200921261 /* IntroViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = IntroViewController.m; sourceTree = "<group>"; };
+		80B3607D1C6B84C300921261 /* WeatherWeek.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeatherWeek.json; sourceTree = "<group>"; };
+		80B360811C6CB2AF00921261 /* WeatherCurrent.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = WeatherCurrent.json; sourceTree = "<group>"; };
+		80CE348F1C69D28300D39FA5 /* WeatherService.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = WeatherService.h; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +117,8 @@
 		1790BFA61C3FCE5900BE1424 /* Weather */ = {
 			isa = PBXGroup;
 			children = (
-				1790BFAA1C3FCE5900BE1424 /* AppDelegate.h */,
-				1790BFAB1C3FCE5900BE1424 /* AppDelegate.m */,
-				1790BFAD1C3FCE5900BE1424 /* ViewController.h */,
-				1790BFAE1C3FCE5900BE1424 /* ViewController.m */,
+				80B360751C6B480700921261 /* Controllers */,
+				80B360761C6B4E7D00921261 /* Services */,
 				1790BFB01C3FCE5900BE1424 /* Main.storyboard */,
 				1790BFB61C3FCE5900BE1424 /* Assets.xcassets */,
 				1790BFB81C3FCE5900BE1424 /* LaunchScreen.storyboard */,
@@ -141,6 +153,33 @@
 				1790BFD11C3FCE5A00BE1424 /* Info.plist */,
 			);
 			path = WeatherUITests;
+			sourceTree = "<group>";
+		};
+		80B360751C6B480700921261 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				1790BFAA1C3FCE5900BE1424 /* AppDelegate.h */,
+				1790BFAB1C3FCE5900BE1424 /* AppDelegate.m */,
+				1790BFAD1C3FCE5900BE1424 /* ViewController.h */,
+				1790BFAE1C3FCE5900BE1424 /* ViewController.m */,
+				80B3607A1C6B63F200921261 /* IntroViewController.h */,
+				80B3607B1C6B63F200921261 /* IntroViewController.m */,
+			);
+			name = Controllers;
+			sourceTree = "<group>";
+		};
+		80B360761C6B4E7D00921261 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				80CE348F1C69D28300D39FA5 /* WeatherService.h */,
+				80B360721C6B47F200921261 /* WeatherWebService.h */,
+				80B360731C6B47F200921261 /* WeatherWebService.m */,
+				80B360771C6B4ECC00921261 /* WeatherMockService.h */,
+				80B360781C6B4ECC00921261 /* WeatherMockService.m */,
+				80B3607D1C6B84C300921261 /* WeatherWeek.json */,
+				80B360811C6CB2AF00921261 /* WeatherCurrent.json */,
+			);
+			name = Services;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -246,9 +285,11 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				80B3607E1C6B84C300921261 /* WeatherWeek.json in Resources */,
 				1790BFBA1C3FCE5900BE1424 /* LaunchScreen.storyboard in Resources */,
 				1790BFB71C3FCE5900BE1424 /* Assets.xcassets in Resources */,
 				1790BFB21C3FCE5900BE1424 /* Main.storyboard in Resources */,
+				80B360821C6CB2AF00921261 /* WeatherCurrent.json in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -275,8 +316,11 @@
 			files = (
 				1790BFB51C3FCE5900BE1424 /* Weather.xcdatamodeld in Sources */,
 				1790BFAF1C3FCE5900BE1424 /* ViewController.m in Sources */,
+				80B360741C6B47F200921261 /* WeatherWebService.m in Sources */,
 				1790BFAC1C3FCE5900BE1424 /* AppDelegate.m in Sources */,
+				80B360791C6B4ECC00921261 /* WeatherMockService.m in Sources */,
 				1790BFA91C3FCE5900BE1424 /* main.m in Sources */,
+				80B3607C1C6B63F200921261 /* IntroViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -500,6 +544,7 @@
 				1790BFD61C3FCE5A00BE1424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1790BFD71C3FCE5A00BE1424 /* Build configuration list for PBXNativeTarget "WeatherTests" */ = {
 			isa = XCConfigurationList;
@@ -508,6 +553,7 @@
 				1790BFD91C3FCE5A00BE1424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		1790BFDA1C3FCE5A00BE1424 /* Build configuration list for PBXNativeTarget "WeatherUITests" */ = {
 			isa = XCConfigurationList;
@@ -516,6 +562,7 @@
 				1790BFDC1C3FCE5A00BE1424 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 

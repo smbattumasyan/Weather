@@ -1,0 +1,39 @@
+{
+    "main": {
+        "grnd_level": 824.46,
+        "temp_min": -6.45,
+        "temp_max": -6.45,
+        "pressure": 824.46,
+        "sea_level": 1040.34,
+        "humidity": 80,
+        "temp": -6.45
+    },
+    "base": "cmc stations",
+    "dt": 1455113941,
+    "id": 616635,
+    "weather": [{
+                "id": 803,
+                "description": "broken clouds",
+                "main": "Clouds",
+                "icon": "04d"
+                }],
+    "name": "Gyumri",
+    "clouds": {
+        "all": 68
+    },
+    "cod": 200,
+    "coord": {
+        "lon": 43.85,
+        "lat": 40.79
+    },
+    "wind": {
+        "deg": 163.002,
+        "speed": 0.78
+    },
+    "sys": {
+        "country": "AM",
+        "sunrise": 1455077111,
+        "message": 0.0028,
+        "sunset": 1455114780
+    }
+}
